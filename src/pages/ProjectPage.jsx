@@ -13,7 +13,7 @@ export default function ProjectPage() {
 
   useEffect(() => {
     if (project) {
-      fetch(`/src/content/projects/${project.markdown}`)
+      fetch(`/content/projects/${project.markdown}`)
         .then((res) => res.text())
         .then((text) => setContent(text))
     }
